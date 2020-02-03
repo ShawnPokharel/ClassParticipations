@@ -15,7 +15,7 @@
         <TextBox x:Name="tbxLastName" HorizontalAlignment="Left" Height="23" Margin="153,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="tbxAddress" HorizontalAlignment="Left" Height="23" Margin="153,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="tbxZipCode" HorizontalAlignment="Left" Height="23" Margin="153,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TextChanged="TextBox_TextChanged"/>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="31" Margin="393,195,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="31" Margin="393,195,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click" IsDefault="True"/>
         <Label x:Name="lblWPF1" Content="       WPF1" HorizontalAlignment="Left" Height="48" Margin="274,54,0,0" VerticalAlignment="Top" Width="251" FontSize="36" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontFamily="Segoe UI Emoji">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -24,6 +24,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
+        <ListBox x:Name="lstEntryForm" HorizontalAlignment="Left" Height="281" Margin="525,138,0,0" VerticalAlignment="Top" Width="267"/>
 
     </Grid>
 </Window>

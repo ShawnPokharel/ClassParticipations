@@ -27,7 +27,7 @@ namespace WpfApp1
             tbxLastName.Text = String.Empty;
             tbxAddress.Text = String.Empty;
             tbxZipCode.Text = String.Empty;
-
+            //Name.Text = String.Empty;
             
 
         }
@@ -37,21 +37,38 @@ namespace WpfApp1
         {
             String firstName, lastName, address, zipCode;
 
-            
-
+            listForm.Items.clear();
+            //Name = txtName.Text
             firstName = tbxFirstName.Text;
             lastName = tbxLastName.Text;
             address = tbxAddress.Text;
             zipCode = tbxZipCode.Text;
+            int zippy; //equivalent to doing Console.ReadLine();
 
+            if(string.IsNullOrWhiteSpace(address) == true)
+            {
+                MessageBox.Show("you must enter an address");
+            }
+
+            bool isInt = Int32.TryParse(zipCode, out zippy);
+
+            if(isInt == false)
+            {
+                MessageBox.Show("Must enter an integer value for zipCode");
+            }
+
+            /*
+            EntryForm ef = new EntryForm();
+            ef.Address = address;
+            ef.
             String name = firstName + " " + lastName;
             EntryForm myEntryForm = new EntryForm();
+            */
 
-            ListBox listBox = new ListBox();
+            //EntryForm ef = new EntryForm(name, address, zipCode);
 
-           //ListBox.
-
-
+            ListBox listform = new ListBox();
+            listForm.Items.Add(ef);
            
 
             //String message = $"{firstName} + {lastName} + {address} + {zipCode}";
